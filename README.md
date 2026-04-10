@@ -1,35 +1,55 @@
-<div align="center">
+# GitHub MCP with Copilot
 
-# 🎉 Congratulations woochang222! 🎉
+**GitHub MCP = "USB-C for AI"** 🔌
 
-<img src="https://octodex.github.com/images/welcometocat.png" height="200px" />
+## 🎯 핵심 메시지
 
-### 🌟 You've successfully completed the exercise! 🌟
+GitHub MCP를 설정하면, **Copilot 에이전트가 Git 워크플로우를 자동으로 제어할 수 있습니다.**
 
-## 🚀 Share Your Success!
+```
+자연어 명령 → Copilot 에이전트 → 자동 Git 작업 실행
+```
 
-**Show off your new skills and inspire others!**
+## 🚀 MCP가 가능하게 하는 것
 
-<a href="https://twitter.com/intent/tweet?text=I%20just%20completed%20the%20%22Integrate%20MCP%20with%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Fwoochang222%2Fskills-integrate-mcp-with-copilot%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20X-1da1f2?style=for-the-badge&logo=x&logoColor=white" alt="Share on X" />
-</a>
-<a href="https://bsky.app/intent/compose?text=I%20just%20completed%20the%20%22Integrate%20MCP%20with%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Fwoochang222%2Fskills-integrate-mcp-with-copilot%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Share on Bluesky" />
-</a>
-<a href="https://www.linkedin.com/feed/?shareActive=true&text=I%20just%20completed%20the%20%22Integrate%20MCP%20with%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Fwoochang222%2Fskills-integrate-mcp-with-copilot%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Share%20on%20LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Share on LinkedIn" />
-</a>
+- 🔍 저장소 자동 검색
+- 📊 프로젝트 코드 자동 분석
+- 🐛 이슈 자동 생성
+- 🌿 브랜치 자동 생성
+- 💾 코드 자동 수정
+- 📝 커밋 자동 생성
+- 🔄 PR 자동 생성
 
-### 🎯 What's Next?
+## 💡 무엇이 다른가?
 
-**Keep the momentum going!**
+**MCP 없이:**
+- 개발자가 수동으로 Git 명령어 실행
+- AI와 Git 간 Context switching 필요
 
-[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/woochang222/skills-integrate-mcp-with-copilot/issues/1)
-[![GitHub Skills](https://img.shields.io/badge/Explore%20GitHub%20Skills-000000?style=for-the-badge&logo=github&logoColor=white)](https://learn.github.com/skills)
+**MCP 있이:**
+- 에이전트가 자동으로 전체 워크플로우 처리
+- 개발자는 아이디어에만 집중
 
-*There's no better way to learn than building things!* 🚀
+## 🛠️ 설정
 
-</div>
+`.vscode/mcp.json`에 GitHub MCP 서버 추가:
+
+```json
+{
+  "servers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}
+```
+
+MCP 활성화 → Copilot 에이전트 자동으로 GitHub 액세스 가능
+
+---
+
+&copy; 2025 GitHub &bull; [MIT License](https://gh.io/mit)
 
 ---
 
